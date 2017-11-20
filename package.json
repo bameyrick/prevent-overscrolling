@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bameyrick/scroll-to-position.git"
+    "url": "git+https://github.com/bameyrick/prevent-overscrolling.git"
   },
   "scripts": {
     "lint": "tslint --project src/*.ts",
