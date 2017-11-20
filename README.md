@@ -32,5 +32,5 @@ import { PreventOverScrolling, EnableOverScrolling } from 'prevent-overscrolling
 ```javascript
 const myScrollableElement = document.querySelector('.MyScrollableElement');
 
-PreventOverScrolling(myScrollableElement);
+ReEnableOverScrolling(myScrollableElement);
 ```

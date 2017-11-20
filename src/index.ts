@@ -4,7 +4,7 @@ export function PreventOverScrolling(scrollableArea: HTMLElement): void {
 	setEvents(true, scrollableArea);
 }
 
-export function EnableOverScrolling(scrollableArea: HTMLElement): void {
+export function ReEnableOverScrolling(scrollableArea: HTMLElement): void {
 	setEvents(false, scrollableArea);
 }
 
