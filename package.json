@@ -1,6 +1,6 @@
 {
   "name": "prevent-overscrolling",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prevents scroll events from overflowing down to parent elements",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

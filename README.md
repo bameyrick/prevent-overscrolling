@@ -3,7 +3,6 @@ Prevents scroll events from overflowing down to parent elements
 
 ## Features
 
-* Prevents overscrolling via keyboard
 * Prevents overscrolling on touch devices
 * Prevents overscrolling via mouse wheel
 * Prevents overscrolling via scroll bar
