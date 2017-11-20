@@ -7,9 +7,9 @@
   "author": "Ben Meyrick <bameyrick@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "scroll",
-    "easing",
-    "animated"
+    "overscroll",
+    "overflow",
+    "auto"
   ],
   "repository": {
     "type": "git",
