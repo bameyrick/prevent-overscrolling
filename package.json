@@ -1,6 +1,6 @@
 {
   "name": "prevent-overscrolling",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Prevents scroll events from overflowing down to parent elements",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,7 +19,7 @@
     "lint": "tslint --project src/*.ts",
     "lint-staged": "lint-staged",
     "precommit": "lint-staged",
-    "prepublishOnly": "npm run lint && tsc -p ./ --outDir dist/",
+    "prepublishOnly": "rm -rf ./dist && npm run lint && tsc -p ./ --outDir dist/",
     "postcommit": "npm run prepublishOnly",
     "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
