@@ -16,7 +16,8 @@
     "url": "git+https://github.com/bameyrick/prevent-overscrolling.git"
   },
   "scripts": {
-    "lint": "tslint --project src/*.ts",
+    "build": " yarn lint && tsc -p tsconfig.json --outDir dist/",
+    "lint": "tslint --project tsconfig.json",
     "lint-staged": "lint-staged",
     "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
