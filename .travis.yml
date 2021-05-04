@@ -13,10 +13,12 @@ jobs:
       edge: true
       provider: npm
       email: bameyrick@gmail.com
-      api_token:
-        secure: ehcz2kU9Dz+xk6kb4iaFcaw1FKaw2qXnt9hFtmlWeX0YIJLNnl9XpGXkLlyqRmFhS556V8emDTM/FCT8+3zrO60OulfNwhv7480DEWr5a3OfT4NLLGdjYjy0n46CDl0EP1TRNDa/jvhMNyll0EEjEvMoc/dIIm2EnoHCnrQXh6uLybykNXT0H3YTMqI8iGQXHZfXU9VeqJk8Y/t7FaXagYubQMtYTmKaLmmP9cyIGsSBpVTREe/4zBGZlnlZW+yJx40da6o8SMER9Tr5MVWx8klMmw+k/QT7/mw8XY+7OlBNNvIOuEqp5v6clErcrshPTTICtUmItMxquM2uOmhnT5qOJYJOXFUkXRkIQK7BbCkqq8sNQW530170+7ovBUYxga3jUUga220gDbkgYCby6qmv+OqQdHwSik68mFKt5kpkP+GCDPhd/uxiSCTlaspM8dZxrTMabugVsVaIR9WgTwXtTs3Af2wwkqA1EYrCJYNRY+dompFo4VYNY2lLlblDIZVop8qhfqnB4v1XHDcWce//izctCJq8cJYbesMVDrVSHi4x9YfQnt44LSL3oZXQYxwRlJ7vQBWdZqpmWnKXYnnD5nrL94bLMJ3ngzEQV/3RuPHFQmSatZlqh9BOHXj8WgLS8CqCxjo0LMbxIO3LGVSAfCkTQ+44vg66uqF0SC0=
+      api_key:
+        secure: aSvl573ZtkygWBhoeG7yDfb8+S5D2awsKGTfUUTbdt1ZIE5qYXCtA40XKj9HIOobUhiYSrRmdQR/1fkS9c6nd5J870vmnexWv2krsXTQENcuWO+m2dd+X2dLSdu+eB41pCvCLx0LLd+z6gZ7LDpGu+7+I0kvsRqa/kAc/i08M35OuQJGxm+Y35XWUzdvpwOZm4Dr8aZf80243HoTMeYIHl1a0f+0J9ivQycwbJtCRPrL2pVm/25fvmo9BHNi4BSd/kuMP5RMpwPC+nr1Jjn7NMkHAEK8pmgF7hLodY4Z7LLlkMHPLARKj62HWEXcTy5jLjczTQVv/w4Cu1AE7kw1yOc4MIpTIOA+twKs1+bS1h1UD7KiQ6E4YgxlBAvRbn6blBGwfGDO39YrRvJxeOxQj/90WtZ/w3K2w6X03fZLA29V+WKUCf7B6U7wAfgu9lmpUlz2hcUZwnmjCbiImtMpTZtxQi90vv0B8z0re+p2/pxqnwuISKVSUt9RT++Uj9ymfaMb9hfZIb3xdP/evBry5GMMkLqUt/d2ZnwrFhbQ6hKoPPkyNO17C3frXFDDFJt5TqB2MDqimBmN5UEIysB/o91/kGD9RQQPT5jSyjgudDrDp39d5/pXJLMe86SlEvP1kLIdLhlXJ8OMguqj1uW6KNay8Bk6ZrALdtdJx5HQs4o=
       on:
         tags: true
+        repo: bameyrick/prevent-overscrolling
+      skip_cleanup: 'true'
 stages:
 - name: test
   if: tag IS NOT present
