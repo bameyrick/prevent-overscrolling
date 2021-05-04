@@ -15,9 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/bameyrick/prevent-overscrolling.git"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.com"
-  },
   "scripts": {
     "build": " yarn lint && tsc -p tsconfig.json --outDir dist/",
     "lint": "tslint --project tsconfig.json",
