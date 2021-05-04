@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/bameyrick/prevent-overscrolling.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": " yarn lint && tsc -p tsconfig.json --outDir dist/",
     "lint": "tslint --project tsconfig.json",
