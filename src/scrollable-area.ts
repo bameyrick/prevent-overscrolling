@@ -75,9 +75,9 @@ export class ScrollableArea {
       let deltaY: number | undefined;
 
       if (eventType === 'keydown') {
-        const tagName = (event.target as HTMLElement).tagName.toLowerCase();
+        const tagName = (event.target as HTMLElement).tagName;
         const keyCode = (event as KeyboardEvent).key;
-        if (this.focused && tagName !== 'input' && tagName !== 'textarea' && USER_SCROLL_KEYBOARD_EVENTS.includes(keyCode)) {
+        if (this.focused && tagName !== 'INPUT' && tagName !== 'TEXTAREA' && USER_SCROLL_KEYBOARD_EVENTS.includes(keyCode)) {
           switch (keyCode) {
             case 'ArrowUp':
             case 'PageUp':
