@@ -22,20 +22,20 @@ export class ScrollableArea {
   public setEventListeners(enable: boolean): void {
     USER_SCROLL_EVENTS.forEach(eventType => {
       if (enable) {
-        this.element.addEventListener(eventType, this.handleScroll.bind(this));
+        this.element.addEventListener(eventType, event => this.handleScroll(event));
       } else {
-        this.element.removeEventListener(eventType, this.handleScroll.bind(this));
+        this.element.removeEventListener(eventType, event => this.handleScroll(event));
       }
     });
 
     if (enable) {
-      this.element.addEventListener('touchstart', this.handleTouchStart.bind(this));
-      win.addEventListener('keydown', this.handleScroll.bind(this));
-      win.addEventListener('click', this.handleClick.bind(this));
+      this.element.addEventListener('touchstart', event => this.handleTouchStart(event));
+      win.addEventListener('keydown', event => this.handleScroll(event));
+      win.addEventListener('click', event => this.handleClick(event));
     } else {
-      this.element.removeEventListener('touchstart', this.handleTouchStart.bind(this));
-      win.removeEventListener('keydown', this.handleScroll.bind(this));
-      win.removeEventListener('click', this.handleClick.bind(this));
+      this.element.removeEventListener('touchstart', event => this.handleTouchStart(event));
+      win.removeEventListener('keydown', event => this.handleScroll(event));
+      win.removeEventListener('click', event => this.handleClick(event));
     }
   }
 
